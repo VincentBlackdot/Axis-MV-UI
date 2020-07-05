@@ -5,6 +5,14 @@ Axis_MV_UI.
 1. DONT PUSH TO MASTER
 
 2. clone project
+how to create your own branch
+
+run these commands 
+
+2.1 - $ git pull
+2.2 - $ git checkout -b [name_of_your_new_branch]
+2.3 - $ git push origin [name_of_your_new_branch]
+
 
 3. cd to your cloned project
 
