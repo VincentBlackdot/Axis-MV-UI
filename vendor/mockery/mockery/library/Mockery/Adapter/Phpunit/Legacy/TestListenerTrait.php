@@ -18,7 +18,15 @@
  * @license   http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
  */
 
-namespace Mockery\Adapter\Phpunit;
+namespace Mockery\Adapter\Phpunit\Legacy;
+
+if (class_exists('PHPUnit_Framework_TestCase') && ! class_exists('PHPUnit\Util\Blacklist')) {
+    class_alias('PHPUnit_Framework_ExpectationFailedException', 'PHPUnit\Framework\ExpectationFailedException');
+    class_alias('PHPUnit_Framework_Test', 'PHPUnit\Framework\Test');
+    class_alias('PHPUnit_Framework_TestCase', 'PHPUnit\Framework\TestCase');
+    class_alias('PHPUnit_Util_Blacklist', 'PHPUnit\Util\Blacklist');
+    class_alias('PHPUnit_Runner_BaseTestRunner', 'PHPUnit\Runner\BaseTestRunner');
+}
 
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\Test;
@@ -77,11 +85,6 @@ class TestListenerTrait
 
     public function startTestSuite()
     {
-        if (method_exists(Blacklist::class, 'addDirectory')) {
-            (new BlackList())->getBlacklistedDirectories();
-            Blacklist::addDirectory(\dirname((new \ReflectionClass(\Mockery::class))->getFileName()));
-        } else {
-            Blacklist::$blacklistedClassNames[\Mockery::class] = 1;
-        }
+        Blacklist::$blacklistedClassNames[\Mockery::class] = 1;
     }
 }
