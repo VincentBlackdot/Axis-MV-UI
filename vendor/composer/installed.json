@@ -1340,6 +1340,63 @@
         ]
     },
     {
+        "name": "laravel/ui",
+        "version": "v2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laravel/ui.git",
+            "reference": "da9350533d0da60d5dc42fb7de9c561c72129bba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laravel/ui/zipball/da9350533d0da60d5dc42fb7de9c561c72129bba",
+            "reference": "da9350533d0da60d5dc42fb7de9c561c72129bba",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/console": "^7.0",
+            "illuminate/filesystem": "^7.0",
+            "illuminate/support": "^7.0",
+            "php": "^7.2.5"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.0",
+            "phpunit/phpunit": "^8.0"
+        },
+        "time": "2020-06-30T20:56:33+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Laravel\\Ui\\UiServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Laravel\\Ui\\": "src/",
+                "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylor@laravel.com"
+            }
+        ],
+        "description": "Laravel UI utilities and presets.",
+        "keywords": [
+            "laravel",
+            "ui"
+        ]
+    },
+    {
         "name": "league/commonmark",
         "version": "1.5.1",
         "version_normalized": "1.5.1.0",
@@ -5797,6 +5854,48 @@
         ],
         "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
         "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles"
+    },
+    {
+        "name": "tpaksu/laravel-otp-login",
+        "version": "1.2",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tpaksu/laravel-otp-login.git",
+            "reference": "b7dde3c6a2d9c7c0e507cbee89e5f8d4ca410b9f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tpaksu/laravel-otp-login/zipball/b7dde3c6a2d9c7c0e507cbee89e5f8d4ca410b9f",
+            "reference": "b7dde3c6a2d9c7c0e507cbee89e5f8d4ca410b9f",
+            "shasum": ""
+        },
+        "time": "2018-12-18T11:23:37+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "tpaksu\\LaravelOTPLogin\\OTPServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "tpaksu\\LaravelOTPLogin\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taha PAKSU",
+                "email": "tpaksu@gmail.com"
+            }
+        ],
+        "description": "Adds OTP login step to Laravel's built-in authentication system"
     },
     {
         "name": "vlucas/phpdotenv",
