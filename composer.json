@@ -14,8 +14,12 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
+<<<<<<< HEAD
         "laravel/ui": "^2.1",
         "tpaksu/laravel-otp-login": "^1.2"
+=======
+        "laravel/ui": "^2.1"
+>>>>>>> 7592186865c9bad5c59fe6b0d01a2b28b9bcb92b
     },
     "require-dev": {
         "facade/ignition": "^2.0",

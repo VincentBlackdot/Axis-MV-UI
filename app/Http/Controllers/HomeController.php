@@ -23,6 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         return view('home');
+=======
+        return view('generalDd.dashboard');
+>>>>>>> 7592186865c9bad5c59fe6b0d01a2b28b9bcb92b
     }
 }
