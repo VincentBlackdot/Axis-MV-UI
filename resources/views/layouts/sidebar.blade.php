@@ -17,13 +17,14 @@
           <li class="sub-menu">
             <a href="javascript:;">
               <i class="fa fa-desktop"></i>
-              <span>UI Elements</span>
+              <span>Baord Elements</span>
               </a>
             <ul class="sub">
-              <li><a href="general.html">General</a></li>
-              <li><a href="buttons.html">Buttons</a></li>
-              <li><a href="panels.html">Panels</a></li>
-              <li><a href="font_awesome.html">Font Awesome</a></li>
+              <li><a href="{{ route('home') }}">Home</a></li>
+              <li><a href="{{ route('admin') }}" >Admins</a></li>
+              <li><a href="{{ route('User') }}">Users</a></li>
+              <li><a href="{{ route('Vendors') }}">Vendors</a></li>
+            
             </ul>
           </li>
           <li class="sub-menu">
