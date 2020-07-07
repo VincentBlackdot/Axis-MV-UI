@@ -20,3 +20,22 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('admin', 'AdminController@index')->name('admin');
+
+Route::get('User', 'UserController@index')->name('User');
+
+Route::get('Vendors', 'VendorsController@index')->name('Vendors');
+
+/*
+Route::get('/users/', function(){
+    return view('usersdb.users');
+});
+Route::get('/vendors', function(){
+    return view('vendorsDb.vendors');
+});
+
+
+Route::resource('posts','PostsController');
+    Route::get('/posts/{code}', [ 'as'=>'post-show', 'uses'=>'PostsController@show']);
+*/
