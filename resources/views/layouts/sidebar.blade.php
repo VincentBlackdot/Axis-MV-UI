@@ -1,4 +1,4 @@
-<!-- **********************************************************************************************************************************************************
+  <!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
     <!--sidebar start-->
@@ -9,7 +9,7 @@
           <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">Sam Soffes</h5>
           <li class="mt">
-            <a href="index.html">
+            <a class="active" href="index.html">
               <i class="fa fa-dashboard"></i>
               <span>Dashboard</span>
               </a>
@@ -17,7 +17,7 @@
           <li class="sub-menu">
             <a href="javascript:;">
               <i class="fa fa-desktop"></i>
-              <span>Elements</span>
+              <span>UI Elements</span>
               </a>
             <ul class="sub">
               <li><a href="general.html">General</a></li>
@@ -82,10 +82,10 @@
             </ul>
           </li>
           <li>
-            <a class="active" href="inbox.html">
+            <a href="inbox.html">
               <i class="fa fa-envelope"></i>
               <span>Mail </span>
-              <span class="label label-theme pull-right mail-info">3</span>
+              <span class="label label-theme pull-right mail-info">2</span>
               </a>
           </li>
           <li class="sub-menu">
