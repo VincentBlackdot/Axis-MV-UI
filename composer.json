@@ -16,11 +16,16 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "laravel/ui": "^2.1",
         "tpaksu/laravel-otp-login": "^1.2"
 =======
         "laravel/ui": "^2.1"
 >>>>>>> 7592186865c9bad5c59fe6b0d01a2b28b9bcb92b
+=======
+        "laravel/ui": "^2.1",
+        "laravelcollective/html": "^6.1"
+>>>>>>> 620ec87dd3154a2fd9b66e9eaf12d1bf0d040d74
     },
     "require-dev": {
         "facade/ignition": "^2.0",
