@@ -22,13 +22,8 @@ class VendorsController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-<<<<<<< HEAD
-    {
-       return view('vendorsDb.index');
-=======
     { 
         return view('vendorsDb.vendors');
         
->>>>>>> 620ec87dd3154a2fd9b66e9eaf12d1bf0d040d74
     }
 }
