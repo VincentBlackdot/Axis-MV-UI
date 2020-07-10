@@ -17,7 +17,7 @@ Website: http://Alvarez.is/
 /* BASIC THEME CONFIGURATION */
 body {
     color: #797979;
-	background: #eaeaea;
+	background: #db1919;
     font-family: 'Ruda', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -39,7 +39,7 @@ a, a:hover, a:focus {
 }
 ::-moz-selection {
     background: #4ECDC4;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 #container {
@@ -127,7 +127,7 @@ a, a:hover, a:focus {
 
 .btn-theme03 {
   color: #fff;
-  background-color: #48cfad;
+  background-color: #6148cf;
   border-color: #37bc9b;
 }
 .btn-theme03:hover,
@@ -322,7 +322,7 @@ ul.sidebar-menu li ul.sub li a {
 }
 
 ul.sidebar-menu li ul.sub li a:hover {
-	color: white;
+	color: red;
 	background: transparent;
 }
 

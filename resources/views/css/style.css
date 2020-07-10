@@ -3406,7 +3406,7 @@ ul.chat-available-user li a:hover {
 .contact-form .loading {
   display: none;
   color: #555;
-  background: #fff;
+  background:red;
   text-align: center;
   padding: 15px;
   margin: 15px 0;
