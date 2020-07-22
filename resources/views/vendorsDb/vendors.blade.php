@@ -4,6 +4,7 @@
 <body>
 
  @include('layouts.topbar')
+ 
   
   <!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
@@ -19,6 +20,12 @@
             <a class="active" href="vendors.blade.php">
               <i class="fa fa-dashboard"></i>
               <span>Home</span>
+              </a>
+          </li>
+          <li>
+            <a href="inbox.html">
+              <i class="fa fa-user"></i>
+              <span>user profile </span>
               </a>
           </li>
           <li class="sub-menu">
@@ -89,9 +96,10 @@
 
                    <!--dd product button ---->
       <div class="invite-row">
-        <a href="addproducts.html" class="btn btn-theme04 pull-left">+ ADD</a>
+        <a href="/addproduct" class="btn btn-theme04 pull-left">+ ADD</a>
       
         <h4 class="pull-left" style ="padding-left: 10px"> PRODUCT</h4>
+       
         <h4 class="pull-right" style ="padding-left: 10px"> ADVERTS</h4>
         <a href="#" class="btn btn-theme03 pull-right">+ ADD</a>
 

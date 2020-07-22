@@ -26,4 +26,9 @@ class VendorsController extends Controller
         return view('vendorsDb.vendors');
         
     }
+    public function addp()
+    { 
+        return view('vendorsDb.addproduct');
+        
+    }
 }
