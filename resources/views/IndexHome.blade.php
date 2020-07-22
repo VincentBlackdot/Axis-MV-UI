@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <title>Axis Home</title>
 <meta charset="utf-8">
@@ -54,10 +54,21 @@
 									</li>
 								</ul>
 							</div>
-							<div class="top_bar_user">
-								<div class="user_icon"><img src="images/user.svg" alt=""></div>
-								<div><a href="#">Register</a></div>
-								<div><a href="#">Sign in</a></div>
+							 @if (Route::has('login'))
+                            	<div class="top_bar_user">
+                            @auth
+                            <a href="{{ url('/home') }}">Home</a>
+                            		<div class="user_icon">
+                            	 <img src="images/user.svg" alt="">
+                            		 </div>
+                            			 @else
+                                  <div><a href="{{ route('login') }}">Login</a></div>
+                            			 @if (Route::has('register'))
+                                 <div> <a href="{{ route('register') }}">Register</a></div>
+                                       @endif
+                                   @endauth
+                               </div>
+                             @endif
 							</div>
 						</div>
 					</div>
