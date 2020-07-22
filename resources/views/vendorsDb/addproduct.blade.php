@@ -288,7 +288,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"add","qid":"1","text":"ADD + Produc
               </div>
               <input type="file" id="output"   name="q7_imageOf[]" multiple="" class="form-submit-button-simple_green_apple form-upload-multiple validate[required]" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="0" data-file-minsize="0" data-file-limit="5" data-component="fileupload" required="" />
             </div>
-            <span salt="your image" width="100" height="100" class="cancelText">
+            <span style="display:none" class="cancelText">
               Cancel
             </span>
             <span style="display:none" class="ofText">

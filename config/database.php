@@ -48,7 +48,11 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
+<<<<<<< HEAD
             'database' => env('DB_DATABASE', 'axis'),
+=======
+            'database' => env('DB_DATABASE', 'axisdb'),
+>>>>>>> 921e326be6837a78d319d5ece2609ed17a27ff16
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
