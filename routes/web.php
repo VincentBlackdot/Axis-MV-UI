@@ -27,6 +27,8 @@ Route::get('User', 'UserController@index')->name('User');
 
 Route::get('Vendors', 'VendorsController@index')->name('Vendors');
 
+Route::resource('/admin/users', 'Admin\UsersControllers', ['except' => ['show', 'store']]);
+
 /*
 Route::get('/users/', function(){
     return view('usersdb.users');
