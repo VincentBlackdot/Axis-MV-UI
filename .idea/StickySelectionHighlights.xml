@@ -43,6 +43,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/config/app.php">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/views/IndexHome.blade.php">
           <value>
             <PaintGroupHighlightMap />

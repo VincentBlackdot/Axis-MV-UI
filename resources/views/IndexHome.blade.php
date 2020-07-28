@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Electro - HTML Ecommerce Template</title>
+		<title>Axis-Home</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -41,30 +41,27 @@
 			<!-- TOP HEADER -->
 			<div id="top-header">
 				<div class="container">
-					<ul class="header-links pull-left">
-						<!-- li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li -->
-						<li><a href="#"><i class="fa fa-envelope-o"></i> axistechnologies07@email.com</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> Lusaka</a></li>
-					</ul>
-					<ul class="header-links pull-right">
-					 @if (Route::has('login'))
-                                    <div class="top-right links">
-                                        @auth
-                                          <li>  <a href="{{ url('/home') }}">Home</a></li>
-                                        @else
-                                        <li><a href="{{ route('login') }}"><i class="fa fa-lock"></i>Login</a></li>
+<!--					<ul class="header-links pull-left">-->
+<!--						<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>-->
+<!--						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>-->
+<!--						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>-->
+<!--					</ul>-->
 
-                                            @if (Route::has('register'))
-                                              <li><a href="{{ route('register') }}"><i class="fa fa-pencil-square-o"></i>Register</a></li>
-                                            @endif
-                                        @endauth
-                                    </div>
-                                @endif
-                                </ul>
-					<!-- ul class="header-links pull-right">
-						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-						<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-					</ul -->
+					<ul class="header-links pull-right">
+                        @if (Route::has('login'))
+
+                              @auth
+                        <li><a href="{{ url('/home') }}"><i class="fa fa-home"></i> Home</a></li>
+						@else
+                            <li><a href="{{ route('login') }}"><i class="fa fa-lock"></i> Login</a></li>
+                            @if (Route::has('register'))
+						<li> <a href="{{ route('register') }}"><i class="fa fa-user-pencil"></i> Register</a></li>
+                            @endif
+
+                                @endauth
+
+                                    @endif
+					</ul>
 				</div>
 			</div>
 			<!-- /TOP HEADER -->
