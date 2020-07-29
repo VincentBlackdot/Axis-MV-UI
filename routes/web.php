@@ -29,6 +29,10 @@ Route::get('Vendors', 'VendorsController@index')->name('Vendors');
 
 Route::resource('/admin/users', 'Admin\UsersControllers', ['except' => ['show', 'store']]);
 
+Route::get('/',function (){
+    $users = DB::table('users')->select('id','name','email')->get();
+    return view('admin.admin', compact('users'));
+});
 /*
 Route::get('/users/', function(){
     return view('usersdb.users');

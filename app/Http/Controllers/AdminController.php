@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 class AdminController extends Controller
 {
@@ -22,8 +25,8 @@ class AdminController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    { 
-        return view('admin.admin');
+    {$users = DB::table('users')->select('id','name','email')->get();
+        return view('admin.admin')->with('users',$users);
         
     }
 }
