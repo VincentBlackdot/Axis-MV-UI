@@ -1,21 +1,52 @@
-  <!--footer start-->
-  <footer class="site-footer">
-    <div class="text-center">
-      <p>
-        &copy; Copyrights <strong>Dashio</strong>. All Rights Reserved
-      </p>
-      <div class="credits">
-        <!--
-          You are NOT allowed to delete the credit link to TemplateMag with free version.
-          You can delete the credit link only if you bought the pro version.
-          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
-          Licensing information: https://templatemag.com/license/
-        -->
-        Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
-      </div>
-      <a href="index.html#" class="go-top">
-        <i class="fa fa-angle-up"></i>
-        </a>
+
+<!-- ============================================================== -->
+<!-- footer -->
+<!-- ============================================================== -->
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                Copyright © 2018 Axis Tech Zambia<a href="https://axiszedbine.com">Site</a>.
+            </div>
+<!--            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">-->
+<!--                <div class="text-md-right footer-links d-none d-sm-block">-->
+<!--                    <a href="javascript: void(0);">About</a>-->
+<!--                    <a href="javascript: void(0);">Support</a>-->
+<!--                    <a href="javascript: void(0);">Contact Us</a>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
     </div>
-  </footer>
-  <!--footer end-->
+</div>
+<!-- ============================================================== -->
+<!-- end footer -->
+<!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- end wrapper  -->
+<!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- end main wrapper  -->
+<!-- ============================================================== -->
+<!-- Optional JavaScript -->
+<!-- jquery 3.3.1 -->
+<script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<!-- bootstap bundle js -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<!-- slimscroll js -->
+<script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+<!-- main js -->
+<script src="assets/libs/js/main-js.js"></script>
+<!-- chart chartist js -->
+<script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+<!-- sparkline js -->
+<script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+<!-- morris js -->
+<script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+<script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+<!-- chart c3 js -->
+<script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+<script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+<script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+<script src="assets/libs/js/dashboard-ecommerce.js"></script>
