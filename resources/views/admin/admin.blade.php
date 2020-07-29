@@ -97,7 +97,42 @@
 <!--                        </div>-->
                     </div>
                     <div class="row">
+                        <!-- ============================================================== -->
 
+                        <!-- ============================================================== -->
+
+                        <!-- Admin Table  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <h5 class="card-header">Admins</h5>
+
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class="bg-light">
+                                            <tr class="border-0">
+                                                <th class="border-0">No</th>
+                                                <th class="border-0">Name</th>
+                                                <th class="border-0">Email</th>
+
+
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- ============================================================== -->
 
                         <!-- ============================================================== -->
@@ -141,106 +176,97 @@
                         <!-- ============================================================== -->
 
                         <!-- ==================pr============================================ -->
-                        <!--=========MODEL ADD producr ==========-->
-                        <div id="addProduct" class="modal fade">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title">Add Product</h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form role="form" method="POSTs" action="" enctype="multipart/form-data">
-                                            <input type="hidden" name="_token" value="">
-                                            <div class="form-group">
-                                                <label class="control-label">Name</label>
-                                                <div>
-                                                    <input type="text" class="form-control input-sm" name="name" value="">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label">Quantity</label>
-                                                <div>
-                                                    <input type="number" class="form-control input-sm" name="Quantity" value="">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label">Price</label>
-                                                <div>
-                                                    <input type="number" class="form-control input-sm" name="Price" value="">
-                                                </div>
-                                            </div>
-<!--                                            <div class="form-group">-->
-<!--                                                <label class="control-label">Name</label>-->
-<!--                                                <div>-->
-<!--                                                    <input type="text" class="form-control input-sm" name="name" value="">-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-                                            <!-- THIS SHOULD BE A DROPP DOWN(SEARCBLE AND SUGGESTING)-->
-                                            <div class="form-group">
-                                                <label class="control-label">Vendor</label>
-                                                <div>
-                                                    <input type="text" class="form-control input-sm" name="vendor" value="">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                               <p><label for="file" style="cursor: pointer;" class="control-label">Image</label></p>
-                                                <div>
-                                                    <input type="file"
-                                                           accept="image/*" id="file" style="display: none"
-                                                           class="form-control input-sm" name="image" value="">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <button type="submit" class="btn btn-success">
-                                                        Add Product
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!--=========MODEL ADD product ==========-->
+{{--                        <div id="addProduct" class="modal fade">--}}
+{{--                            <div class="modal-dialog" role="document">--}}
+{{--                                <div class="modal-content">--}}
+{{--                                    <div class="modal-header">--}}
+{{--                                        <h1 class="modal-title">Add Product</h1>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="modal-body">--}}
+{{--                                        <form role="form" method="POSTs" action="" enctype="multipart/form-data">--}}
+{{--                                            <input type="hidden" name="_token" value="">--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <label class="control-label">Name</label>--}}
+{{--                                                <div>--}}
+{{--                                                    <input type="text" class="form-control input-sm" name="name" value="">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <label class="control-label">Quantity</label>--}}
+{{--                                                <div>--}}
+{{--                                                    <input type="number" class="form-control input-sm" name="Quantity" value="">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <label class="control-label">Price</label>--}}
+{{--                                                <div>--}}
+{{--                                                    <input type="number" class="form-control input-sm" name="Price" value="">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--<!--                                            <div class="form-group">-->--}}
+{{--<!--                                                <label class="control-label">Name</label>-->--}}
+{{--<!--                                                <div>-->--}}
+{{--<!--                                                    <input type="text" class="form-control input-sm" name="name" value="">-->--}}
+{{--<!--                                                </div>-->--}}
+{{--<!--                                            </div>-->--}}
+{{--                                            <!-- THIS SHOULD BE A DROPP DOWN(SEARCBLE AND SUGGESTING)-->--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <label class="control-label">Vendor</label>--}}
+{{--                                                <div>--}}
+{{--                                                    <input type="text" class="form-control input-sm" name="vendor" value="">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="form-group">--}}
+{{--                                               <p><label for="file" style="cursor: pointer;" class="control-label">Image</label></p>--}}
+{{--                                                <div>--}}
+{{--                                                    <input type="file"--}}
+{{--                                                           accept="image/*" id="file" style="display: none"--}}
+{{--                                                           class="form-control input-sm" name="image" value="">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <div>--}}
+{{--                                                    <button type="submit" class="btn btn-success">--}}
+{{--                                                        Add Product--}}
+{{--                                                    </button>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </form>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                         <!-- ============================================================== -->
                         <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12">
                             <div class="card">
-                                <h5 class="card-header">products</h5>
-                                <button type="button"
-                                        class="btn btn-primary btn-lg"
-                                        data-toggle="modal"
-                                        data-target="#addProduct"
-                                >
-                                    Add Products
-                                </button>
+                                <h5 class="card-header">Vendors</h5>
+
                                 <div class="card-body p-0">
                                     <div class="table-responsive">
                                         <table class="table">
-                                            <thead class="bg-light">
-                                            <tr class="border-0">
-                                                <th class="border-0">#</th>
-                                                <th class="border-0">Image</th>
-                                                <th class="border-0">Product Name</th>
-                                                <th class="border-0">Quantity</th>
-                                                <th class="border-0">Price</th>
-                                                <th class="border-0">Vendor</th>
-                                                <th class="border-0">Status</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>{{ Auth::user()->name }}</td>
-                                                <td><span class="badge-dot badge-brand mr-1"></span> </td>
-                                            </tr>
+                                            <table class="table">
+                                                <thead class="bg-light">
+                                                <tr class="border-0">
+                                                    <th class="border-0">No</th>
+                                                    <th class="border-0">Name</th>
+                                                    <th class="border-0">Email</th>
+                                                    <th class="border-0">Status</th>
 
-                                           </tbody>
-                                        </table>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    @foreach ($users as $users)
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><span class="badge-dot badge-brand mr-1"></span> </td>
+                                                </tr>
+                                                @endforeach
+                                                </tbody>
+                                            </table>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +278,7 @@
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- customer acquistion  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <h5 class="card-header">Customer Acquisition</h5>
@@ -279,7 +305,7 @@
                     <div class="row">
                         <!-- ============================================================== -->
                         <!-- product category  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <h5 class="card-header"> Product Category</h5>
@@ -304,7 +330,7 @@
                         <!-- ============================================================== -->
                         <!-- end product category  -->
                         <!-- product sales  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="card">
                                 <div class="card-header">
@@ -315,7 +341,7 @@
                                                 <option value="2">Monthly</option>
                                                 <option value="3">Yearly</option>
                                             </select>
-                                        </div> -->
+                                        </div> --
                                     <h5 class="mb-0"> Product Sales</h5>
                                 </div>
                                 <div class="card-body">
@@ -325,11 +351,11 @@
                         </div>
                         <!-- ============================================================== -->
                         <!-- end product sales  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12">
                             <!-- ============================================================== -->
                             <!-- top perfomimg  -->
-                            <!-- ============================================================== -->
+                            <!-- ============================================================== --
                             <div class="card">
                                 <h5 class="card-header">Top Performing Campaigns</h5>
                                 <div class="card-body p-0">
@@ -385,14 +411,14 @@
                             </div>
                             <!-- ============================================================== -->
                             <!-- end top perfomimg  -->
-                            <!-- ============================================================== -->
+                            <!-- ============================================================== --
                         </div>
                     </div>
 
                     <div class="row">
                         <!-- ============================================================== -->
                         <!-- sales  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top border-top-primary">
                                 <div class="card-body">
@@ -411,7 +437,7 @@
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- new customer  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top border-top-primary">
                                 <div class="card-body">
@@ -430,7 +456,7 @@
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- visitor  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top border-top-primary">
                                 <div class="card-body">
@@ -449,7 +475,7 @@
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- total orders  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top border-top-primary">
                                 <div class="card-body">
@@ -465,7 +491,7 @@
                         </div>
                         <!-- ============================================================== -->
                         <!-- end total orders  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                     </div>
                     <div class="row">
                         <!-- ============================================================== -->
@@ -476,7 +502,7 @@
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- category revenue  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
                             <div class="card">
                                 <h5 class="card-header">Revenue by Category</h5>
@@ -487,7 +513,7 @@
                         </div>
                         <!-- ============================================================== -->
                         <!-- end category revenue  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
 
                         <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
                             <div class="card">
@@ -505,7 +531,7 @@
                         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                             <!-- ============================================================== -->
                             <!-- social source  -->
-                            <!-- ============================================================== -->
+                            <!-- ============================================================== --
                             <div class="card">
                                 <h5 class="card-header"> Sales By Social Source</h5>
                                 <div class="card-body p-0">
@@ -528,12 +554,12 @@
                             </div>
                             <!-- ============================================================== -->
                             <!-- end social source  -->
-                            <!-- ============================================================== -->
+                            <!-- ============================================================== --
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <!-- ============================================================== -->
                             <!-- sales traffice source  -->
-                            <!-- ============================================================== -->
+                            <!-- ============================================================== --
                             <div class="card">
                                 <h5 class="card-header"> Sales By Traffic Source</h5>
                                 <div class="card-body p-0">
@@ -564,7 +590,7 @@
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- sales traffic country source  -->
-                        <!-- ============================================================== -->
+                        <!-- ============================================================== --
                         <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <h5 class="card-header">Sales By Country Traffic Source</h5>
