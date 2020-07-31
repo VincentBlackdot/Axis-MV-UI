@@ -23,10 +23,14 @@ class AdminController extends Controller
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable
+     *
      */
+
     public function index()
     {$users = DB::table('users')->select('id','name','email')->get();
         return view('admin.admin')->with('users',$users);
-        
+
+
     }
+
 }

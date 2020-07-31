@@ -23,9 +23,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('admin', 'AdminController@index')->name('admin');
 
-Route::get('User', 'UserController@index')->name('User');
+Route::get('admin.usersProfile', 'UsersController@index')->name('admin.usersProfile');
+    //->name('usersProfile');;
 
-Route::get('Vendors', 'VendorsController@index')->name('Vendors');
+Route::get('admin.vendorsProfile', 'VendorsController@index')->name('admin.vendorsProfile');
+    //->name('VendorsProfile');;
 
 Route::resource('/admin/users', 'Admin\UsersControllers', ['except' => ['show', 'store']]);
 
