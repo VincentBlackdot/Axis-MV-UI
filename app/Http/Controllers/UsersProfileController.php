@@ -18,7 +18,7 @@ public function  __construct()
      */
     public function index()
     {
-        return view('usersdb.users');
+        return view('admin.usersProfile');
 
     }
 }
