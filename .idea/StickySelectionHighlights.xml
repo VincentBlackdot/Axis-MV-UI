@@ -28,6 +28,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/config/app.php">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/database/migrations/2020_07_25_084307_create_products_table.php">
           <value>
             <PaintGroupHighlightMap />
@@ -43,7 +48,7 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/config/app.php">
+        <entry key="$PROJECT_DIR$/public/css/style.css">
           <value>
             <PaintGroupHighlightMap />
           </value>
