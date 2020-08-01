@@ -40,6 +40,8 @@ Route::get('adminsTable', 'AdminsTablesController@index')->name('adminsTable');
 Route::get('adminsProfile', 'AdminsProfileController@index')->name('adminsProfile');
 
 Route::resource('/admin/users', 'Admin\UsersControllers', ['except' => ['show', 'store']]);
+//LOGIN AND SIGN UP
+//Route::get('')
 
 //return redirect()->route('login');
 //

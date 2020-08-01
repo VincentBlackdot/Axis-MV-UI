@@ -55,8 +55,8 @@
                         <li><a href="{{ url('/home') }}"><i class="fa fa-home"></i> Home</a></li>
 						@else
                             <li><a href="{{ route('login') }}"><i class="fa fa-lock"></i> Login</a></li>
-                            @if (Route::has('register'))
-						<li> <a href="{{ route('register') }}"><i class="fa fa-user-pencil"></i> Register</a></li>
+                            @if (Route::has('UserReg'))
+						<li> <a href="{{ route('UserReg') }}"><i class="fa fa-user-pencil"></i> Register</a></li>
                             @endif
 
                                 @endauth
