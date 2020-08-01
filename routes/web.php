@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('indexHome');
+    return view('IndexHome');
 });
 
 Auth::routes();
@@ -23,27 +23,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('admin', 'AdminController@index')->name('admin');
 
-Route::get('admin.usersProfile', 'UsersController@index')->name('admin.usersProfile');
-    //->name('usersProfile');;
+Route::get('users', 'UsersController@index')->name('user');
 
-Route::get('admin.vendorsProfile', 'VendorsController@index')->name('admin.vendorsProfile');
-    //->name('VendorsProfile');;
+Route::get('vendors', 'VendorsController@index')->name('vendors');
 
 Route::resource('/admin/users', 'Admin\UsersControllers', ['except' => ['show', 'store']]);
 
-//Route::get('/',function (){
-//    $users = DB::table('users')->select('id','name','email')->get();
-//    return view('admin.admin', compact('users'));
+//return redirect()->route('login');
+//
+//Route::get('vendorsProfile', function () {
+//    return redirect('admin.admin');
 //});
-/*
-Route::get('/users/', function(){
-    return view('usersdb.users');
-});
-Route::get('/vendors', function(){
-    return view('vendorsDb.vendors');
-});
-
-
-Route::resource('posts','PostsController');
-    Route::get('/posts/{code}', [ 'as'=>'post-show', 'uses'=>'PostsController@show']);
-*/

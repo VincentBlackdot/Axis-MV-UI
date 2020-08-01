@@ -1,15 +1,24 @@
 <?php
-
 namespace App\Http\Controllers;
-
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
 
 class UsersProfileController extends Controller
 {
+    /***
+     * @return void
+     */
+public function  __construct()
+{
+    $this->middleware('auth');
+}
+
+    /**
+     * @return \illuminate\Contracts\Supports\Renderable
+     */
     public function index()
     {
-        return view('admin.usersProfile');
+        return view('usersdb.users');
 
     }
 }

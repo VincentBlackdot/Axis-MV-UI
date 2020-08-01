@@ -17,10 +17,10 @@
                         <a class="nav-link " href="{{ url('/admin') }}"  data-target="#submenu-1" ><i fa fa-fw fa-connectdevelop></i>Dashboard <span class="badge badge-success">6</span></a>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.usersProfile') }}"  data-target="#submenu-2"><i class="fa fa-users"></i>Users<span class="badge badge-success">6</span></a>
+                        <a class="nav-link" href="{{ url ('usersProfile') }}"  data-target="#submenu-2"><i class="fa fa-users"></i>Users<span class="badge badge-success">6</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.vendorsProfile') }}"  data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-viacoin"></i>Vendors</a>
+                        <a class="nav-link" href="{{ url('vendorsProfile') }}"  data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-viacoin"></i>Vendors</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="{{ url('/admin') }}"  data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Forms</a>
