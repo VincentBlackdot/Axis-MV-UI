@@ -11,38 +11,38 @@
         </div>
         <div class="nalika-profile">
             <div class="profile-dtl">
-                <a href="#"><img src="img/notification/4.jpg" alt="" /></a>
-                <h2>Lakian <span class="min-dtn">Das</span></h2>
+                <a href="#"><img src="img/profile.jpg" alt="" /></a>
+                <h2>{{ Auth::user()->name }} </span></h2>
             </div>
             <div class="profile-social-dtl">
                 <ul class="dtl-social">
-                    <li><a href="#"><i class="icon nalika-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon nalika-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon nalika-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
         <div class="left-custom-menu-adp-wrap comment-scrollbar">
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
-                    <li class="active">
-                        <a class="has-arrow" href="index.html">
-                            <i class="icon nalika-home icon-wrap"></i>
-                            <span class="mini-click-non">Ecommerce</span>
+
+                        <a class=" "href="{{ url('/users') }}">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <span class="mini-click-non">Dashboard</span>
                         </a>
-                        <ul class="submenu-angle" aria-expanded="true">
-                            <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard v.1</span></a></li>
-                            <li><a title="Dashboard v.2" href="index-1.html"><span class="mini-sub-pro">Dashboard v.2</span></a></li>
-                            <li><a title="Dashboard v.3" href="index-2.html"> <span class="mini-sub-pro">Dashboard v.3</span></a></li>
-                            <li><a title="Product List" href="product-list.html"><span class="mini-sub-pro">Product List</span></a></li>
-                            <li><a title="Product Edit" href="product-edit.html"><span class="mini-sub-pro">Product Edit</span></a></li>
-                            <li><a title="Product Detail" href="product-detail.html"><span class="mini-sub-pro">Product Detail</span></a></li>
-                            <li><a title="Product Cart" href="product-cart.html"><span class="mini-sub-pro">Product Cart</span></a></li>
-                            <li><a title="Product Payment" href="product-payment.html"><span class="mini-sub-pro">Product Payment</span></a></li>
-                            <li><a title="Analytics" href="analytics.html"><span class="mini-sub-pro">Analytics</span></a></li>
-                            <li><a title="Widgets" href="widgets.html"><span class="mini-sub-pro">Widgets</span></a></li>
-                        </ul>
-                    </li>
+{{--                        <ul class="submenu-angle" aria-expanded="true">--}}
+{{--                            <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard v.1</span></a></li>--}}
+{{--                            <li><a title="Dashboard v.2" href="index-1.html"><span class="mini-sub-pro">Dashboard v.2</span></a></li>--}}
+{{--                            <li><a title="Dashboard v.3" href="index-2.html"> <span class="mini-sub-pro">Dashboard v.3</span></a></li>--}}
+{{--                            <li><a title="Product List" href="product-list.html"><span class="mini-sub-pro">Product List</span></a></li>--}}
+{{--                            <li><a title="Product Edit" href="product-edit.html"><span class="mini-sub-pro">Product Edit</span></a></li>--}}
+{{--                            <li><a title="Product Detail" href="product-detail.html"><span class="mini-sub-pro">Product Detail</span></a></li>--}}
+{{--                            <li><a title="Product Cart" href="product-cart.html"><span class="mini-sub-pro">Product Cart</span></a></li>--}}
+{{--                            <li><a title="Product Payment" href="product-payment.html"><span class="mini-sub-pro">Product Payment</span></a></li>--}}
+{{--                            <li><a title="Analytics" href="analytics.html"><span class="mini-sub-pro">Analytics</span></a></li>--}}
+{{--                            <li><a title="Widgets" href="widgets.html"><span class="mini-sub-pro">Widgets</span></a></li>--}}
+{{--                        </ul>--}}
+
                     <li>
                         <a class="has-arrow" href="mailbox.html" aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">Mailbox</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
@@ -168,7 +168,11 @@
                                     <div class="header-right-info">
                                         <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                             <li class="nav-item dropdown">
-                                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="icon nalika-mail" aria-hidden="true"></i><span class="indicator-ms"></span></a>
+                                                <a href="#" data-toggle="dropdown" role="button"
+                                                   aria-expanded="false"
+                                                   class="nav-link dropdown-toggle">
+                                                    <i class="glyphicon glyphicon-envelope" aria-hidden="true">
+                                                    </i><span class="indicator-ms"></span></a>
                                                 <div role="menu" class="author-message-top dropdown-menu animated zoomIn">
                                                     <div class="message-single-top">
                                                         <h1>Message</h1>
@@ -177,27 +181,27 @@
                                                         <li>
                                                             <a href="#">
                                                                 <div class="message-img">
-                                                                    <img src="img/contact/1.jpg" alt="">
+                                                                    <img src="img/contact/1.jpg" alt="Messages">
                                                                 </div>
                                                                 <div class="message-content">
                                                                     <span class="message-date">16 Sept</span>
-                                                                    <h2>Advanda Cro</h2>
+                                                                    <h2>{{ Auth::user()->name }}</h2>
                                                                     <p>Please done this project as soon possible.</p>
                                                                 </div>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <div class="message-img">
-                                                                    <img src="img/contact/4.jpg" alt="">
-                                                                </div>
-                                                                <div class="message-content">
-                                                                    <span class="message-date">16 Sept</span>
-                                                                    <h2>Sulaiman din</h2>
-                                                                    <p>Please done this project as soon possible.</p>
-                                                                </div>
-                                                            </a>
-                                                        </li>
+{{--                                                        <li>--}}
+{{--                                                            <a href="#">--}}
+{{--                                                                <div class="message-img">--}}
+{{--                                                                    <img src="img/contact/4.jpg" alt="">--}}
+{{--                                                                </div>--}}
+{{--                                                                <div class="message-content">--}}
+{{--                                                                    <span class="message-date">16 Sept</span>--}}
+{{--                                                                    <h2>Sulaiman din</h2>--}}
+{{--                                                                    <p>Please done this project as soon possible.</p>--}}
+{{--                                                                </div>--}}
+{{--                                                            </a>--}}
+{{--                                                        </li>--}}
                                                         <li>
                                                             <a href="#">
                                                                 <div class="message-img">
@@ -228,7 +232,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="icon nalika-alarm" aria-hidden="true"></i><span class="indicator-nt"></span></a>
+                                            <li class="nav-item"><a href="#" data-toggle="dropdown" role="button"
+                                                                    aria-expanded="false" class="nav-link dropdown-toggle">
+                                                    <i class="glyphicon glyphicon-bell" aria-hidden="true"></i><span class="indicator-nt"></span></a>
                                                 <div role="menu" class="notification-author dropdown-menu animated zoomIn">
                                                     <div class="notification-single-top">
                                                         <h1>Notifications</h1>
@@ -241,7 +247,7 @@
                                                                 </div>
                                                                 <div class="notification-content">
                                                                     <span class="notification-date">16 Sept</span>
-                                                                    <h2>Advanda Cro</h2>
+                                                                    <h2>{{ Auth::user()->name }}</h2>
                                                                     <p>Please done this project as soon possible.</p>
                                                                 </div>
                                                             </a>
@@ -289,10 +295,11 @@
                                                 </div>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                    <i class="icon nalika-user"></i>
-                                                    <span class="admin-name">Advanda Cro</span>
-                                                    <i class="icon nalika-down-arrow nalika-angle-dw"></i>
+                                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                                                   class="nav-link dropdown-toggle">
+                                                    <i class="glyphicon glyphicon-user"></i>
+                                                    <span class="admin-name">{{ Auth::user()->name }}</span>
+                                                    <i class="glyphicon glyphicon-chevron-down"></i>
                                                 </a>
                                                 <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
                                                     <li><a href="register.html"><span class="icon nalika-home author-log-ic"></span> Register</a>
@@ -307,7 +314,10 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="nav-item nav-setting-open"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="icon nalika-menu-task"></i></a>
+                                            <li class="nav-item nav-setting-open">
+                                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                                                   class="nav-link dropdown-toggle">
+                                                    <i class="glyphicon glyphicon-cog"></i></a>
 
                                                 <div role="menu" class="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated zoomIn">
                                                     <ul class="nav nav-tabs custon-set-tab">
@@ -848,10 +858,10 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                     <div class="breadcomb-wp">
                                         <div class="breadcomb-icon">
-                                            <i class="icon nalika-home"></i>
+                                            <i class="fa fa-home" aria-hidden="true"></i>
                                         </div>
                                         <div class="breadcomb-ctn">
-                                            <h2>Dashboard One</h2>
+                                            <h2>Dashboard </h2>
                                             <p>Welcome to Nalika <span class="bread-ntd">Admin Template</span></p>
                                         </div>
                                     </div>
