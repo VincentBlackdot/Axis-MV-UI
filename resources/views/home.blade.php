@@ -8,6 +8,7 @@
                 <div class="card-header"><a href="{{ url('/admin') }}">Admin</a></div>
                 <div class="card-header"><a href="{{ url('/users') }}">Users</a></div>
                 <div class="card-header"><a href="{{ url('/vendors') }}">Vendors</a></div>
+            </div>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -17,7 +18,7 @@
 
                     {{ __('You are logged in!') }}
                 </div>
-            </div>
+
         </div>
     </div>
 </div>

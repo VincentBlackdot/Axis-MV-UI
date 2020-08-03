@@ -14,4 +14,5 @@
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
