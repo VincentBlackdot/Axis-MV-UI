@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class VendorsController extends Controller
+class VendorsTablesControllers extends Controller
 {
     /**
      * Create a new controller instance.
@@ -22,8 +23,8 @@ class VendorsController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    { 
-        return view('admin.vendorsProfile');
-        
+    {
+        return view('admin.vendorsTables');
+
     }
 }
