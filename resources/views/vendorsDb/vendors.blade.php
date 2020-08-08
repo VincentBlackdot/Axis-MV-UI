@@ -30,6 +30,7 @@
                 <ul class="metismenu" id="menu1">
                     <a href="/addproduct" class="pull-left">+ ADD PRODUCT</a>
                     <a href="#" class="">+ ADD ADVERT</a>
+                    <a href="sections" class=""> SECTIONS</a>
 
 
                         <a class=" "href="{{ url('/users') }}">
@@ -800,96 +801,68 @@
         </div>
     </div>
 </div>
-             
-<div class="row mt">
-    <div class="">
-      <div class="content-panel">
-        <table class="table table-bordered table-hover">
-          <h4><i class="fa fa-angle-right"></i> TRANSACTIONS</h4>
-          <hr>
-          <thead>
-            <tr>
-              <th><i class="fa fa-bullhorn"></i>OrderID</th>
-              <th class="id"><i class="fa fa-question-circle"></i>Product Name</th>
-              <th><i class="fa fa-bookmark"></i>Units</th>
-              <th><i class="fa fa-money"></i>cost</th>
-              <th><i class=" fa fa-edit"></i>status</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a href="basic_table.html#">0001</a>
-              </td>
-              <td class="hidden-phone">samsung s6</td>
-              <td>2</td>
-              <td>K2000</td>
-              <td><span class="label label-warning label-mini">Delayed</span></td>
-              <td>
-                <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="basic_table.html#">0002</a>
-              </td>
-              <td class="hidden-phone">headsets</td>
-              <td>3</td>
-              <td>K50</td>
-              <td><span class="label label-success label-mini">Completed</span></td>
-              <td>
-                <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="basic_table.html#">0003</a>
-              </td>
-              <td class="hidden-phone">Btooth speaker</td>
-              <td>1</td>
-              <td>K80</td>
-              <td><span class="label label-primary label-mini">ON HOLD</span></td>
-              <td>
-                <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="basic_table.html#">0004</a>
-              </td>
-              <td class="hidden-phone">infinix hot 8</td>
-              <td>1</td>
-              <td>k1,200</td>
-              <td><span class="label label-danger label-mini">CANCELLED</span></td>
-              <td>
-                <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
-                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
-              </td>
-            </tr>
-           
-          </tbody>
-        </table>
-      </div>
-  
-        </div> 
-       
-        <section class="wrapper">
-          <div class="row">
-            <div class="col-lg-9 main-chart">
-  
-              <!--CUSTOM CHART START -->
-  
-  
-  
-              
+<br>
+
+<div class="product-status mg-b-30">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="product-status-wrap">
+                    <h4>Products List</h4>
+                    <div class="add-product">
+                        <a href="addproducts">Add Product</a>
+                    </div>
+                    
+                    <table>
+                        <br>
+                        <tr>
+                            <th>product_id</th>
+                            <th>Image</th>
+                            <th>Product Name</th>
+    
+                            <th>Purchases</th>
+                            <th>Product sales</th>
+                            <th>Stock</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Setting</th>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td><img src="img/new-product/5-small.jpg" alt="" /></td>
+                            <td>Product Title 1</td>
+                           
+                            <td>50</td>
+                            <td>$750</td>
+                            <td>Out Of Stock</td>
+                           
+                            <td>$15</td>
+                            <td>
+                                <button class="pd-setting">Active</button>
+                            </td>
+                            <td>
+                                <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                       
+                  
+                     
+                    </table>
+                    <div class="custom-pagination">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
             
               <!--custom chart end-->
               
