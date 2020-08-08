@@ -27,9 +27,14 @@ class AdminController extends Controller
      */
 
     public function index()
-    {$users = DB::table('users')->select('id','name','email')->get();
+    {$users = DB::table('users')->select('id','name','email','phone')->get();
         return view('admin.admin')->with('users',$users);
 
+
+    }
+    public function UsersTable()
+    {
+        return view('admin.users-table');
 
     }
 

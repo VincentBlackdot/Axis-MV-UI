@@ -102,14 +102,14 @@
                     </li>
 
                     <li class="nav-item dropdown nav-user">
-                        <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/axis-st.png" alt="avata" class="user-avatar-md rounded-circle"></a>
+                        <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ asset( Auth ::user()->avatar)  }}" alt="" style="height: 35px; width =35px; border-radius= 50%; margin-right=15px;"></a>
                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                             <div class="nav-user-info">
                                 <h5 class="mb-0 text-white nav-user-name">{{ Auth::user()->name }}</h5>
 
                                 <span class="status"></span><span class="ml-2">Available</span>
                             </div>
-                            <a class="dropdown-item" href="{{ url('/admin') }}"><i class="fas fa-user mr-2"></i>Profile</a>
+                            <a class="dropdown-item" href="{{ url('/admin') }}"><img src="{{ asset( Auth ::user()->avatar)  }}" alt="" style="height: 35px; width =35px; border-radius= 50%; margin-right=15px;"></i>  Profile</a>
                             <a class="dropdown-item" href="{{ url('/admin') }}"><i class="fas fa-cog mr-2"></i>Setting</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
