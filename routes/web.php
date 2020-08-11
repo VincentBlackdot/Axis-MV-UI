@@ -49,5 +49,14 @@ Route::resource('/admin/users', 'Admin\UsersControllers', ['except' => ['show', 
 //Route::get('vendorsProfile', function () {
 //    return redirect('admin.admin');
 //});
-//VENDORS ROUTES//;
+
+
+//VENDORS ROUTES
+// sections//;
 Route::get('sections', 'SectionController@VendorsDbsections')->name('sections');
+
+//category routs
+Route::get('categories', 'CategoryController@VendorsDbCategories')->name('categories');
+
+//add-eddit-categoty rout
+Route::match(['get','post'],'add-edit-category/{id?}','CategoryController@VendorsDbaddEditCategory');

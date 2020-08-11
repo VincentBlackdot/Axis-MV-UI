@@ -35,7 +35,7 @@
 
                     <a href="sections" class=""> Sections</a>
                     <a href="#" class="pull-left">quotations</a>
-                    <a href="categories" class="">Categories</a>
+                    <a href="#" class="">Categories</a>
                     
                     <li>
                         <a class="has-arrow" href="mailbox.html" aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">Mailbox</span></a>
@@ -807,45 +807,40 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-status-wrap">
-                    <h4>Products List</h4>
+                    <h4>Categories</h4>
+                  
                     <div class="add-product">
-                        <a href="addproduct">Add Product</a>
+                        <a href="{{ url('/add-edit-category') }}"style="max-width:150px; float:right;" class="btn btn-block btn-success">Add Category</a>
                     </div>
                     
+                    
+                         
                     <table>
-                        <br>
                         <tr>
-                            <th>product_id</th>
-                            <th>Image</th>
-                            <th>Product Name</th>
-    
-                            <th>Purchases</th>
-                            <th>Product sales</th>
-                            <th>Stock</th>
-                            <th>Price</th>
-                            <th>Status</th>
-                            <th>Setting</th>
-                        </tr>
+                            <th>ID</th>
+                            <br>
+                            <th>NAME</th>
+                            <th>URL</th>
+                            <th>STATUS</th>
+                        </tr> 
+                        @foreach($categories as $category)
                         <tr>
-                            <td>0001</td>
-                            <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                            <td>Product Title 1</td>
-                           
-                            <td>50</td>
-                            <td>$750</td>
-                            <td>Out Of Stock</td>
-                           
-                            <td>$15</td>
+                            <td>{{ $category->id }}</td>
+                            <td>{{ $category->category_name }}</td>
+                            <td>{{ $category->url }}</td>
                             <td>
-                                <button class="pd-setting">Active</button>
+                                @if($category->status==1)
+                                    <a class:"updateCategoryStatus" id="categories-{{ $category->id }}"category_id="{{ $category->id }}" href="javascript:void(0)">Active</a>
+                                @else
+                                <a class:"updatecategoryStatus" id="categories-{{ $category->id }}"category_id="{{ $category->id }}" href="javascript:void(0)">Inactive</a>
+                                @endif
                             </td>
                             <td>
                                 <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                 <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                             </td>
                         </tr>
-                       
-                  
+                        @endforeach
                      
                     </table>
                     <div class="custom-pagination">
