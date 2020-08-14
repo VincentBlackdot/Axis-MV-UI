@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header"><a href="{{ url('/admin') }}">Admin</a></div>
                 <div class="card-header"><a href="{{ url('/users') }}">Users</a></div>
-                <div class="card-header"><a href="{{ url('/vendors') }}">Vendors</a></div>
+                <div class="card-header"><a href="{{ route ('vendors') }}">Vendors</a></div>
             </div>
                 <div class="card-body">
                     @if (session('status'))
@@ -16,7 +16,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <img src="{{ asset( Auth ::user()->avatar)  }}" alt="" style="height: 60px; width =60px; border-radius= 50%; margin-right=15px;"> {{ __('You are logged in!') }}
                 </div>
 
         </div>

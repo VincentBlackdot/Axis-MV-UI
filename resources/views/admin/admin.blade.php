@@ -188,6 +188,7 @@
                                                             <th class="border-0">No</th>
                                                             <th class="border-0">Name</th>
                                                             <th class="border-0">Email</th>
+                                                            <th class="border-0">Phone</th>
                                                             <th class="border-0">Status</th>
 
                                                         </tr>
@@ -198,6 +199,7 @@
                                                             <td>{{$users->id}}</td>
                                                             <td>{{ $users->name }}</td>
                                                             <td>{{ $users->email }}</td>
+                                                            <td>{{ $users->phone }}</td>
                                                              <td><span class="badge-dot badge-brand mr-1"></span> </td>
                                                         </tr>
                                                         @endforeach
