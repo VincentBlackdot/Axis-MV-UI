@@ -30,6 +30,7 @@ Route::get('vendors', 'VendorsController@index')->name('vendors');
 Route::get('usersProfile', 'UsersProfileController@index')->name('usersProfile');
 
 Route::get('vendorsProfile', 'VendorsProfileController@index')->name('vendorsProfile');
+Route::get('addproduct', 'ProductsController@AddProduct')->name('addproduct');
 
 Route::get('vendorsTables', 'VendorsTablesControllers@index')->name('vendorsTables');
 
@@ -48,3 +49,14 @@ Route::resource('/admin/users', 'Admin\UsersControllers', ['except' => ['show', 
 //Route::get('vendorsProfile', function () {
 //    return redirect('admin.admin');
 //});
+
+
+//VENDORS ROUTES
+// sections//;
+Route::get('sections', 'SectionController@VendorsDbsections')->name('sections');
+
+//category routs
+Route::get('categories', 'CategoryController@VendorsDbCategories')->name('categories');
+
+//add-eddit-categoty rout
+Route::match(['get','post'],'add-edit-category/{id?}','CategoryController@VendorsDbaddEditCategory');

@@ -15,4 +15,9 @@ class ProductsController extends Controller
 
     return view("allproducts",compact("products"));
     }
+    public function AddProduct()
+    {
+        return view('vendorsDb/addproduct');
+
+    }
 }

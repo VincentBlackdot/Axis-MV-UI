@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header"><a href="{{ url('/admin') }}">Admin</a></div>
                 <div class="card-header"><a href="{{ url('/users') }}">Users</a></div>
-                <div class="card-header"><a href="{{ url('/vendors') }}">Vendors</a></div>
+                <div class="card-header"><a href="{{ route ('vendors') }}">Vendors</a></div>
             </div>
                 <div class="card-body">
                     @if (session('status'))
