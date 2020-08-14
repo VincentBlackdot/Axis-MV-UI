@@ -34,6 +34,8 @@ Route::get('addproduct', 'ProductsController@AddProduct')->name('addproduct');
 
 Route::get('vendorsTables', 'VendorsTablesControllers@index')->name('vendorsTables');
 
+Route::get('users-table', 'AdminController@UsersTable')->name('users-table');
+
 Route::get('usersTables', 'UsersTablesControllers@index')->name('usersTables');
 
 Route::get('adminsTable', 'AdminsTablesController@index')->name('adminsTable');
@@ -41,6 +43,18 @@ Route::get('adminsTable', 'AdminsTablesController@index')->name('adminsTable');
 Route::get('adminsProfile', 'AdminsProfileController@index')->name('adminsProfile');
 
 Route::resource('/admin/users', 'Admin\UsersControllers', ['except' => ['show', 'store']]);
+
+
+// admin side table routes
+Route::get('usersTables', 'UsersTablesControllers@UsersTables')->name('usersTables');
+
+Route:: get('/edituser-row/{id}', 'UsersTablesControllers@UsersTablesEdit');
+Route:: put('/update-row/{id}', 'UsersTablesControllers@UserEditUpdate');
+
+
+
+
+
 //LOGIN AND SIGN UP
 //Route::get('')
 

@@ -523,7 +523,10 @@ class ComposerStaticInit4d5f2434b55337c19a7f40b3b96e4e9d
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\ProductsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductsController.php',
+<<<<<<< HEAD
         'App\\Http\\Controllers\\SectionController' => __DIR__ . '/../..' . '/app/Http/Controllers/SectionController.php',
+=======
+>>>>>>> 70ce08db38433442629a3376f99bf484feddebb1
         'App\\Http\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsersController.php',
         'App\\Http\\Controllers\\UsersProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsersProfileController.php',
         'App\\Http\\Controllers\\UsersTablesControllers' => __DIR__ . '/../..' . '/app/Http/Controllers/UsersTablesControllers.php',

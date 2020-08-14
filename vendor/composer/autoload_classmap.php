@@ -23,7 +23,10 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\ProductsController' => $baseDir . '/app/Http/Controllers/ProductsController.php',
+<<<<<<< HEAD
     'App\\Http\\Controllers\\SectionController' => $baseDir . '/app/Http/Controllers/SectionController.php',
+=======
+>>>>>>> 70ce08db38433442629a3376f99bf484feddebb1
     'App\\Http\\Controllers\\UsersController' => $baseDir . '/app/Http/Controllers/UsersController.php',
     'App\\Http\\Controllers\\UsersProfileController' => $baseDir . '/app/Http/Controllers/UsersProfileController.php',
     'App\\Http\\Controllers\\UsersTablesControllers' => $baseDir . '/app/Http/Controllers/UsersTablesControllers.php',
