@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 @include('layouts.header')
-@include('layouts.side')
+@include('layouts.sider')
 <body>
 
 
