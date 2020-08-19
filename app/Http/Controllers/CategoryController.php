@@ -20,8 +20,9 @@ class CategoryController extends Controller
             $title = "Edit Category";
            //edit category functionality innocent
         }
-        return view('vendorsDb.categories.add_edit_category',['categories'=>('title')]);
-        //return view('vendorsDb.categories.add_edit_category')->with(compact)('title));
+      // return view('vendorsDb.categories.add_edit_category')->with(compact(title));
+        return view('vendorsDb.categories.add_edit_category',['Categories'=>$title,]);
+    
     }
 }
 
