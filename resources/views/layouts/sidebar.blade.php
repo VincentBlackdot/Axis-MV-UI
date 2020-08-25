@@ -45,6 +45,23 @@
                         </div>
                     </li>
 
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('file-manager') }}"  data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-folder"></i>File Manager</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('mail-box') }}"  data-target="#submenu-3" aria-controls="submenu-3"><i class="fa big-icon fa-envelope icon-wrap"></i>Mail Box</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('calendar') }}"  data-target="#submenu-3" aria-controls="submenu-3"><i class="fab fa-fw fa-wpforms"></i>Calendar</a>
+                    </li>
+
+
+
+                    
+
                         </ul>
                         </div>
 

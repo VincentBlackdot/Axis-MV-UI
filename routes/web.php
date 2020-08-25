@@ -53,6 +53,32 @@ Route:: put('/update-row/{id}', 'UsersTablesControllers@UserEditUpdate');
 
 
 
+//This is a controller for admin pages
+
+//Route::get('user-profile', 'UserProfileController@userProfile');
+
+Route::get('password-recovery', 'AdminController@PasswordRecovery')->name('password-recovery');
+
+Route::get('mail-box', 'AdminController@AdminMailBox')->name('mail-box');
+Route::get('email-details', 'AdminController@AdminEmailDetails')->name('email-details');
+Route::get('message-chat', 'AdminController@AdminChats')->name('message-chat');
+
+Route::get('admin-account', 'AdminController@AdminAccount')->name('admin-account');
+
+Route::get('product-list', 'AdminController@ProductList')->name('product-list');
+
+Route::get('email-compose', 'AdminController@ComposeEmail')->name('email-compose');
+
+Route::get('photo-slide', 'AdminController@PhotoSlide')->name('photo-slide');
+
+Route::get('calendar', 'AdminController@CalendarPage')->name('calendar');
+
+Route::get('file-manager', 'AdminController@FileManager')->name('file-manager');
+Route::get('profile', 'AdminController@AdminProfile')->name('profile');
+
+
+
+
 
 //LOGIN AND SIGN UP
 //Route::get('')

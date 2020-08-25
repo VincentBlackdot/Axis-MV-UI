@@ -68,37 +68,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown connection">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
-                        <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
-                            <li class="connection-list">
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                        <a href="#" class="connection-item"><img src="assets/images/github.png" alt="" > <span>Github</span></a>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                        <a href="#" class="connection-item"><img src="assets/images/dribbble.png" alt="" > <span>Dribbble</span></a>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                        <a href="#" class="connection-item"><img src="assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                        <a href="#" class="connection-item"><img src="assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
-                                        <a href="#" class="connection-item"><img src="assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                        <a href="#" class="connection-item"><img src="assets/images/mail_chimp.png" alt="" ><span>Mail chimp</span></a>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                        <a href="#" class="connection-item"><img src="assets/images/slack.png" alt="" > <span>Slack</span></a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="conntection-footer"><a href="#">More</a></div>
-                            </li>
-                        </ul>
+                        <a class="nav-link" href="{{ route('message-chat') }}" > <i class="fa big-icon fa-envelope icon-wrap"></i> </a>
                     </li>
 
                     <li class="nav-item dropdown nav-user">
@@ -109,7 +79,7 @@
 
                                 <span class="status"></span><span class="ml-2">Available</span>
                             </div>
-                            <a class="dropdown-item" href="{{ url('/admin') }}"><img src="{{ asset( Auth ::user()->avatar)  }}" alt="" style="height: 35px; width =35px; border-radius= 50%; margin-right=15px;"></i>  Profile</a>
+                            <a class="dropdown-item" href="{{ url('/profile') }}"><img src="{{ asset( Auth ::user()->avatar)  }}" alt="" style="height: 35px; width =35px; border-radius= 50%; margin-right=15px;"></i>  Profile</a>
                             <a class="dropdown-item" href="{{ url('/admin') }}"><i class="fas fa-cog mr-2"></i>Setting</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
