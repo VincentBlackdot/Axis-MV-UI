@@ -45,7 +45,9 @@
 								<div class="top-right links">
 									@auth
 										<a href="{{ url('/home') }}"
-										style="color: #d43f3a ">Home</a>
+										style="color: #fff "><i class="fa fa-home" aria-hidden="true"></i>Home</a>&nbsp;&nbsp;
+										<a href="{{ route('usersProfile') }}"
+										style="color: #fff "><i class="fa fa-user" aria-hidden="true"></i> Account</a>
 									@else
 										<a href="{{ route('login') }}"
 										   style="color: #d43f3a">Login</a>
@@ -84,8 +86,8 @@
 								<form>
 									<select class="input-select">
 										<option value="0">All Categories</option>
-										<option value="1">Category 01</option>
-										<option value="1">Category 02</option>
+										<option value="1">Technology</option>
+										<option value="2">Clothing</option>
 									</select>
 									<input class="input" placeholder="Search here">
 									<button class="search-btn">Search</button>
@@ -114,7 +116,7 @@
 										<span>Your Cart</span>
 										<div class="qty">3</div>
 									</a>
-									<div class="cart-dropdown">
+									<!-- <div class="cart-dropdown">
 										<div class="cart-list">
 											<div class="product-widget">
 												<div class="product-img">
@@ -146,7 +148,7 @@
 											<a href="#">View Cart</a>
 											<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
 										</div>
-									</div>
+									</div> -->
 								</div>
 								<!-- /Cart -->
 
@@ -171,27 +173,32 @@
 		<!-- /HEADER -->
 
 		<!-- NAVIGATION -->
-		<nav id="navigation">
+		<!-- <nav id="navigation"> -->
 			<!-- container -->
-			<div class="container">
+			<!-- <div class="container"> -->
 				<!-- responsive-nav -->
-				<div id="responsive-nav">
+				<!-- <div id="responsive-nav"> -->
 					<!-- NAV -->
-					<ul class="main-nav nav navbar-nav">
+					<br>
+<div>
+				<center><strong>Corosel slide</stromg></center>	</div>
+					<!-- <ul class="main-nav nav navbar-nav">
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#">Hot Deals</a></li>
 						<li><a href="#">Categories</a></li>
+
+						
 						<li><a href="#">Laptops</a></li>
 						<li><a href="#">Smartphones</a></li>
 						<li><a href="#">Cameras</a></li>
 						<li><a href="#">Accessories</a></li>
-					</ul>
+					</ul> -->
 					<!-- /NAV -->
-				</div>
+				<!-- </div> -->
 				<!-- /responsive-nav -->
-			</div>
+			<!-- </div> -->
 			<!-- /container -->
-		</nav>
+		<!-- </nav> -->
 		<!-- /NAVIGATION -->
 
 		<!-- SECTION -->
@@ -207,7 +214,7 @@
 								<img src="./img/shop01.png" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Laptop<br>Collection</h3>
+								<h3>Fast<br>Bine</h3>
 								<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
@@ -221,7 +228,7 @@
 								<img src="./img/shop03.png" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Accessories<br>Collection</h3>
+								<h3>Tech<br>Collection</h3>
 								<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
@@ -235,7 +242,7 @@
 								<img src="./img/shop02.png" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Cameras<br>Collection</h3>
+								<h3>Clothing<br>Collection</h3>
 								<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>

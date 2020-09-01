@@ -51,8 +51,8 @@ Route::get('usersTables', 'UsersTablesControllers@UsersTables')->name('usersTabl
 Route:: get('/edituser-row/{id}', 'UsersTablesControllers@UsersTablesEdit');
 Route:: put('/update-row/{id}', 'UsersTablesControllers@UserEditUpdate');
 
-
-
+//Routes to user Profile
+Route:: get('usersProfile', 'UsersController@page2')->name('usersProfile');
 
 
 //LOGIN AND SIGN UP

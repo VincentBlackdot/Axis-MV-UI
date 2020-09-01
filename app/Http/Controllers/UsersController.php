@@ -26,4 +26,9 @@ class UsersController extends Controller
         return view('usersdb.users');
         
     }
+
+    public function page2()
+    {
+    return view('usersdb.usersProfile');
+    }
 }
